@@ -12,6 +12,16 @@ function App() {
       <MovieCard title={title} genres={genresArr} />
     </div>
   );
+
+}
+
+function MovieCard({title:{posterURL, genresArr}}){
+  return(
+      <div>
+        <a href={title}>{posterURL}</a>
+        <a href={posterURL}>{genresArr}</a>
+      </div>
+  );
 }
 
 export default App;
